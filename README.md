@@ -1,9 +1,17 @@
-# Vascular-Network-Reconstruction-Toolkit
-Python package for vascular network reconstruction from point-cloud data. Includes vessel segmentation, skeleton extraction, and graph generation for length/diameter analysis, and 3D geometry creation for CFD. Built for reproducible workflows in tissue engineering and hemodynamics research
-
 # Point-Cloud to Volume Reconstruction Tool
 
 A Python pipeline that turns a raw 3D **point cloud** (for example, particle positions from a simulation) into a **watertight volume reconstruction**. It then measures that volume: surface area, sphericity, vessel length, diameter, tortuosity and network topology.
+
+# Application
+
+A Python package for vascular network reconstruction from point-cloud data. It includes:
+
+Vessel segmentation: separating the point cloud into individual vessel networks
+Skeleton extraction: reducing each vessel volume to its centre lines
+Graph generation: building a vessel graph for length and diameter analysis
+3D geometry creation for CFD: producing a reconstructed vessel geometry that can be used for flow simulations
+
+It is built for reproducible workflows in tissue engineering and hemodynamics research.
 
 The reconstruction uses two methods:
 
