@@ -10,9 +10,15 @@ The reconstruction uses two methods:
 - **PCA** (Principal Component Analysis) estimates a surface normal at every point from its local neighbourhood.
 - A **level-set** formulation builds a signed distance field φ(x) from the oriented points. The reconstructed surface is the zero level set φ = 0, and the solid volume is the region where φ < 0.
 
-![Point cloud and reconstructed volume](docs/reconstruction_preview.png)
+# Validation
+Validation: point cloud, volume reconstruction and skeleton
 
-*Left: the input point cloud (final timestep of `sim_4000.npy`, 4,000 points). Right: the reconstructed surface, which is the zero level set of the signed distance field.*
+Validation of the solver on sim_4000.npy (final timestep, 4,000 points). (a) Input point cloud. (b) Volume reconstruction: the zero level set φ = 0 of the signed distance field, enclosing the solid region φ < 0. (c) Centre-line skeleton extracted from the reconstructed volume. The reconstructed volume closely follows the geometry of the input point cloud, and the skeleton reproduces its network topology (branches, end points and loops). Together these validate the reconstruction and the network analysis.
+
+<img width="972" height="451" alt="image" src="https://github.com/user-attachments/assets/714247e7-bc1a-45a8-9e36-e35c92fa13dc" />
+
+
+*Left: the input point cloud (final timestep of `sim_4000.npy`, 4,000 points). Middle: the reconstructed surface, which is the zero level set of the signed distance field. Right: the network skeleton*
 
 ---
 
