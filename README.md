@@ -15,7 +15,7 @@ Validation: point cloud, volume reconstruction and skeleton
 
 Validation of the solver on sim_4000.npy (final timestep, 4,000 points). (a) Input point cloud. (b) Volume reconstruction: the zero level set φ = 0 of the signed distance field, enclosing the solid region φ < 0. (c) Centre-line skeleton extracted from the reconstructed volume. The reconstructed volume closely follows the geometry of the input point cloud, and the skeleton reproduces its network topology (branches, end points and loops). Together these validate the reconstruction and the network analysis.
 
-<img width="972" height="451" alt="image" src="https://github.com/user-attachments/assets/f0a9bc25-42ba-4eb3-a499-58d659e8470e" />
+<img width="1159" height="523" alt="image" src="https://github.com/user-attachments/assets/1f3e7c53-39b5-455b-8f89-1fbd133c2a8d" />
 
 *Left: the input point cloud (final timestep of `sim_4000.npy`, 4,000 points). Middle: the reconstructed surface, which is the zero level set of the signed distance field. Right: the network skeleton*
 
